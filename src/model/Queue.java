@@ -55,6 +55,9 @@ public class Queue<ContentType> {
     public void dequeue(){
         if(!isEmpty()){
             head = head.getNext();
+            if(head == null){
+                tail = null;
+            }
         }
     }
     public ContentType front(){

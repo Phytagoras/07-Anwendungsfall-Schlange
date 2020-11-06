@@ -36,7 +36,7 @@ public class MainController {
         } else {
             return new String[] {"Nüx da! :O"};
         }
-        return output.toArray(String[]::new);
+        return output.toArray(new String[output.size()]);
     }
 
     /**
